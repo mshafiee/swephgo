@@ -1,5 +1,5 @@
 # SwEphGo
-Golang interface binding to the Swiss Ephemeris C library v2.10.01.
+Golang interface binding to the Swiss Ephemeris C library v2.10.03.
 
 Swiss Ephemeris is a powerful and versatile astronomical calculation library that serves the needs of astrologers, archeoastronomers, and, depending on the purpose, also astronomers. It includes long-term ephemerides for the Sun, the Moon, the planets, over 300,000 asteroids, historically relevant fixed stars, and some hypothetical objects.
 
@@ -15,11 +15,11 @@ libswe.so: $(SWEOBJ)
 ```
 
 2. After compiling the library, copy the `libswe.so` file to `/usr/local/lib/`.
-```sh
+```shell
 $ cp libswe.so /usr/local/lib/
 ```
 3. Get the library with the following command:
-```sh
+```shell
 $ go get github.com/mshafiee/swephgo
 ```
 
@@ -27,7 +27,7 @@ $ go get github.com/mshafiee/swephgo
 
 Once you have the library installed, you can use it in your Go projects by importing it in the main package and calling the Version function to print out the version of the library being used. For example, you can use the following code:
 
-````
+````go
 package main
 
 import (
@@ -45,13 +45,13 @@ func main() {
 
 To run the code above:
 
-`````
+`````shell
 $ go run main.go
 `````
 
 The output will be:
 `````
-Library used: Swiss Ephemeris v2.10.01
+Library used: Swiss Ephemeris v2.10.03
 `````
 
 # Disclaimer
