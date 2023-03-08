@@ -7,7 +7,7 @@ Swiss Ephemeris is a powerful and versatile astronomical calculation library tha
 
 To get started with using SwEphGo, you'll first need to install the Swiss Ephemeris Library. You can download it [here](https://www.astro.com/ftp/swisseph/) and then follow these installation steps:
 
-1. To compile the library, navigate to the `src` folder of the downloaded library and execute make libswe.so. In some systems, you may need to modify the build command by adding `-lm -ldl` to `libswe.so` in the `Makefile`. Here's the updated Makefile code:
+1. To compile the library, navigate to the `src` folder of the downloaded library and execute `make libswe.so`. In some environments, you may need to modify the build command by adding `-lm -ldl` to `libswe.so` in the `Makefile`. Here's the updated Makefile code:
 ```makefile
 
 libswe.so: $(SWEOBJ)
